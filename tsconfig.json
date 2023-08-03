@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -20,7 +16,34 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
+
+// {
+//   "compilerOptions": {
+//     "target": "es5",
+//     "lib": ["dom", "dom.iterable", "esnext"],
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "strict": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "noFallthroughCasesInSwitch": true,
+//     "module": "esnext",
+//     "moduleResolution": "node",
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "noEmit": true,
+//     "jsx": "react-jsx",
+//     "strictNullChecks": true,
+//     "sourceMap": true
+//   },
+//   "scripts": {
+//     "start": "tsc && node ./dist/index.js",
+//     "build": "tsc --build",
+//     "clean": "tsc --build --clean"
+//   },
+//   "include": ["src/**/*"], // src 디렉토리 밑의 파일들을 컴파일 하겠다는 뜻
+//   "exclude": ["node_modules", "dist"] // node_modules, dist 디렉토리 밑의 파일들은 컴파일 대상에서 제외하겠다는 뜻
+// }
