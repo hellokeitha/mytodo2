@@ -1,5 +1,6 @@
-// import uuid from "react-uuid";
 import shortid from "shortid";
+
+// redux toolkit 으로 다시 만들어보기
 
 const initialState = [
   {

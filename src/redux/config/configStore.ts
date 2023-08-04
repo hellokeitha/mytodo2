@@ -7,6 +7,10 @@ import todos from "../modules/todos";
 const rootReducer = combineReducers({
   todos: todos,
 });
+
+export type RootState = ReturnType<typeof rootReducer>;
+
+// 스토어 생성
 const store = createStore(rootReducer);
 
 export default store;

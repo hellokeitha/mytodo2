@@ -21,8 +21,12 @@ function Details() {
       Details
       <p>{foundData.id}</p>
       <p>{foundData.title}</p>
-      <p>{foundData.contents}</p>
-      <p>{foundData.isDone.toString()}</p>
+      <p>{foundData.content}</p>
+      <p>{foundData.important}</p>
+      <p>{foundData.dueDate}</p>
+      <p>{foundData.createdAt}</p>
+      <p>{foundData.isCompleted.toString()}</p>
+      <p>{foundData.isDeleted.toString()}</p>
       <button
         onClick={() => {
           navigate("/");
@@ -30,7 +34,6 @@ function Details() {
       >
         Back To Home
       </button>
-      {/* <Link to='/Home'>홈 페이지로 이동하기</Link> */}
     </div>
   );
 }

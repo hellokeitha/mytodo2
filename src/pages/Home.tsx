@@ -1,5 +1,5 @@
 // src/App.tsx
-import React, { FormEvent, useState, useEffect, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import DarkModeToggle from "../components/DarkModeToggle";
 import styled from "styled-components";
 import { ThemeContext } from "../components/ThemeProvider";
@@ -36,9 +36,14 @@ export default App;
 const Container = styled.div`
   background-color: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.text};
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   flex-direction: column;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+  top: 0;
+  left: 0;
 `;
